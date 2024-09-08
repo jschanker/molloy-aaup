@@ -1,5 +1,6 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "molloy-aaup",
+  "homepage": "https://jschanker.github.io/molloy-aaup",
   "private": true,
   "version": "0.0.0",
   "type": "module",
