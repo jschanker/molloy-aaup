@@ -30,7 +30,7 @@ function App() {
           <Route path="/opportunities" element={<h1>Opportunities</h1>} />
           <Route
             path="/professional-insurance"
-            element={<h1>Professional Liability Insurance</h1>}
+            element={<><h1>Professional Liability Insurance</h1><a href = "https://www.aaupambainsurance.com/business-insurance/professional-liability/professional-liability/professional-liability.html">Get it here!</a></>}
           />
         </Routes>
       </BrowserRouter>
