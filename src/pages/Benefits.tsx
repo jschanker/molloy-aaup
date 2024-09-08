@@ -7,13 +7,13 @@ export default function Benefits() {
       </a>
       <iframe
         title="VideoPress Video Player"
-        aria-label="VideoPress Video Player"
+        ariaLabel="VideoPress Video Player"
         width="100%"
         height="563"
         src="https://video.wordpress.com/embed/cuVFnSYL?cover=1&amp;autoPlay=1&amp;preloadContent=metadata&amp;hd=0"
         frameBorder="0"
-        allowfullscreen=""
-        data-resize-to-parent="true"
+        allowFullScreen=""
+        dataResizeToParent="true"
         allow="clipboard-write"
       ></iframe>
     </div>

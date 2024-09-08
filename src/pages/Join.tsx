@@ -6,8 +6,8 @@ export default function Join() {
         width="100%"
         height="1469"
         frameBorder="0"
-        marginheight="0"
-        marginwidth="0"
+        marginHeight="0"
+        marginWidth="0"
       >
         Loading…
       </iframe>

@@ -23,7 +23,6 @@ function App() {
           <Route path="/benefits" element={<Benefits />} />
           <Route
             path="/communications"
-            exact
             element={<h1>Communications</h1>}
           />
           <Route path="/contact" element={<Contact />} />
