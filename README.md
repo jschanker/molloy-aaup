@@ -1,1 +1,1 @@
-# molloy-aaup
+# Molloy AAUP
