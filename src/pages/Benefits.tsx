@@ -13,7 +13,6 @@ export default function Benefits() {
         src="https://video.wordpress.com/embed/cuVFnSYL?cover=1&amp;autoPlay=1&amp;preloadContent=metadata&amp;hd=0"
         frameBorder="0"
         allowFullScreen
-        dataResizeToParent
         allow="clipboard-write"
       ></iframe>
     </div>
