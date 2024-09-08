@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { useSearchParams } from "react-router-dom";
 //import { HashLink } from 'react-router-hash-link';
@@ -17,21 +17,20 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/about" exact element={<About />} />
-          <Route path="/blog" exact element={<Blog />} />
-          <Route path="/benefits" exact element={<Benefits />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/benefits" element={<Benefits />} />
           <Route
             path="/communications"
             exact
             element={<h1>Communications</h1>}
           />
-          <Route path="/contact" exact element={<Contact />} />
-          <Route path="/join" exact element={<Join />} />
-          <Route path="/opportunities" exact element={<h1>Opportunities</h1>} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/join" element={<Join />} />
+          <Route path="/opportunities" element={<h1>Opportunities</h1>} />
           <Route
             path="/professional-insurance"
-            exact
             element={<h1>Professional Liability Insurance</h1>}
           />
         </Routes>
