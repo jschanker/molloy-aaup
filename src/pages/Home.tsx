@@ -26,7 +26,7 @@ export default function Home() {
       </h1>
       <h2>Protect Your Career, Strengthen Your Voice.</h2>
       <button className="btn btn-primary">Join Now</button>
-      <div style={{ align: 'left' }}>
+      <div>
         <ol style={{ marginTop: '30px' }}>
           <li className="section-item fade-in">
             <div className="section-item-content">
