@@ -2,6 +2,7 @@ import '../Home.css';
 import aaupHeader from '../assets/aaup-header.jpg'; // image from https://www.peoplesworld.org/wp-content/uploads/2022/03/aaup960.jpg
 import fist from '../assets/aaup-fist.png'; // image adapted from https://www.newschoolfreepress.com/wp-content/uploads/2024/03/aaup-1536x864.png
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   useEffect(() => {
@@ -25,7 +26,9 @@ export default function Home() {
         Join AAUP: Your Advocate for Academic Freedom and Professional Rights
       </h1>
       <h2>Protect Your Career, Strengthen Your Voice.</h2>
-      <button className="btn btn-primary">Join Now</button>
+      <Link to="join">
+        <button className="btn btn-primary">Join Now</button>
+      </Link>
       <div>
         <ol style={{ marginTop: '30px' }}>
           <li className="section-item fade-in">
