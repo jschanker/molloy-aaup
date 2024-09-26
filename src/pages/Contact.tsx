@@ -35,7 +35,6 @@ export default function Contact() {
           <br />
           <label htmlFor="message">Message</label>: &nbsp;
           <textarea
-            type="text"
             id="message"
             value={message}
             rows={10}
