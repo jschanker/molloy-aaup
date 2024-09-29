@@ -55,7 +55,6 @@ export default function SendEmail() {
           <br />
           <label htmlFor="purpose">Purpose</label>: &nbsp;
           <select
-            type="text"
             id="purpose"
             value={purpose}
             onChange={(e) => setPurpose(e.target.value)}
@@ -83,9 +82,11 @@ export default function SendEmail() {
           <br />
           <button
             onClick={(e) => {
-              const subjectInput = document.getElementById('subject');
+              const subjectInput = document.getElementById(
+                'subject'
+              ) as HTMLInputElement;
               // const messageInput = document.getElementById('message');
-              const isValid = [subjectInput].every((x) => x.checkValidity());
+              const isValid = [subjectInput].every((x) => x!.checkValidity());
               if (isValid) {
                 e.preventDefault();
                 setDidSubmit(true);
