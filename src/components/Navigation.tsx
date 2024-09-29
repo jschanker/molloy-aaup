@@ -50,21 +50,29 @@ export default function Navigation() {
               <NavDropdown.Item as={Link} to="/benefits">
                 Benefits of Membership
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="professional-insurance">
+              <NavDropdown.Item as={Link} to="/professional-insurance">
                 Professional Liability Insurance
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="communications">
+              <NavDropdown.Item as={Link} to="/communications">
                 National and State AAUP Communications
               </NavDropdown.Item>
               {/*<NavDropdown.Divider />*/}
             </NavDropdown>
-            <Nav.Link as={Link} to="opportunities">
-              Get Involved
-            </Nav.Link>
-            <Nav.Link as={Link} to="contact">
+            <NavDropdown title="Get Involved" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/updates-signup">
+                Sign up for updates
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/send-email">
+                Send e-mail to members
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/opportunities">
+                Volunteer
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link as={Link} to="/contact">
               Contact Us
             </Nav.Link>
-            <Nav.Link as={Link} to="join" className="btn btn-primary">
+            <Nav.Link as={Link} to="/join" className="btn btn-primary">
               Join AAUP
             </Nav.Link>
           </Nav>
