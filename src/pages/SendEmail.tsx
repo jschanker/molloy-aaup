@@ -15,7 +15,7 @@ export default function SendEmail() {
       console.log({ subject, message, purpose, password });
       axios
         .post(
-          'https://script.google.com/macros/s/AKfycbzeJWhlHqd6OSjZttGxJtFJgGhEG2-BhgEEG97J_tQWFpzeLg7NcuIkyOHLx2zL0O0T/exec',
+          'https://script.google.com/macros/s/AKfycbwFi3QDI1K7jrXiEtjRrJQIIDeXUmUgcWoQy14-CQ9qrYNOEqHBb_i-VG8VbxKZUc_5/exec',
           {
             subject,
             message,
