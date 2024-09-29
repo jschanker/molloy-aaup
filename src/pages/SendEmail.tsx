@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function SendEmail() {
+  const [password, setPassword] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [purpose, setPurpose] = useState('New blog posts');
@@ -11,14 +12,15 @@ export default function SendEmail() {
 
   useEffect(() => {
     if (didSubmit) {
-      console.log({ subject, message, purpose });
+      console.log({ subject, message, purpose, password });
       axios
         .post(
-          'https://script.google.com/macros/s/AKfycbysV03S_FF1rzmtFr6iZszuYEYnYwIRXAiHcFZIkn9UTzGFor497YzDkZ6OZqHqXl_D/exec',
+          'https://script.google.com/macros/s/AKfycbzeJWhlHqd6OSjZttGxJtFJgGhEG2-BhgEEG97J_tQWFpzeLg7NcuIkyOHLx2zL0O0T/exec',
           {
             subject,
             message,
             purpose,
+            password,
           },
           { headers: { 'content-type': 'application/x-www-form-urlencoded' } }
         )
@@ -41,12 +43,24 @@ export default function SendEmail() {
       <h1>Send Email</h1>
       {!didSubmit ? (
         <>
+          <label htmlFor="password">Password</label>: &nbsp;
+          <input
+            type="password"
+            id="password"
+            value={password}
+            pattern={`[A-Za-z0-9.'""\s!;\:/\@?]+`}
+            required
+            title="Characters must be letters, numbers, spaces, quotation marks, or periods for now."
+            onChange={(e) => setPassword(e.target.value)}
+          ></input>
+          <br />
+          <br />
           <label htmlFor="subject">Subject</label>: &nbsp;
           <input
             type="text"
             id="subject"
             value={subject}
-            pattern={`[A-Za-z0-9. '""\s]+`}
+            pattern={`[A-Za-z0-9.'""\s!;\:/\@?]+`}
             required
             title="Characters must be letters, numbers, spaces, quotation marks, or periods for now."
             onChange={(e) => setSubject(e.target.value)}
