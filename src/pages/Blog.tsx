@@ -1,4 +1,6 @@
 import articles from '../assets/articles.json';
+import articleCategories from '../assets/article-categories.json';
+import { ButtonGroup, Button, Form, InputGroup } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 
@@ -74,6 +76,9 @@ export default function Blog() {
   const [articleContent, setArticleContent] = useState(
     new Array(allowedToAccessArr.length)
   );
+  const [selectedCategories, setSelectedCategories] = useState([1]);
+  const [searchTerm, setSearchTerm] = useState('');
+
   useEffect(() => {
     const decryptKey = (keys.length > 0 ? keys[keys.length - 1] : '')
       .substring(0, 32)
@@ -88,39 +93,112 @@ export default function Blog() {
     });
   }, [keys]);
 
+  const handleCategoryClick = (categoryId: number) => {
+    if (selectedCategories.includes(categoryId)) {
+      setSelectedCategories(selectedCategories.filter((c) => c !== categoryId));
+    } else {
+      setSelectedCategories(selectedCategories.concat(categoryId));
+    }
+  };
+
   return (
-    <div>
+    <div className="container-fluid">
       <h1>Blog Feed</h1>
       <form>
-        Password to access Protected Articles:{' '}
-        <input
-          type="text"
-          value={key}
-          onChange={(e) => setKey(e.target.value)}
-          maxLength={32}
-        ></input>
-        <button
-          onClick={(e) => {
-            setKeys([...keys, key.substring(0, 32).padEnd(32, ' ')]);
-            setKey('');
-            /*
+        <label htmlFor="filter-categories">Filter articles by:&nbsp;</label>
+        <ButtonGroup id="filter-categories">
+          {articleCategories.map((category: { id: number; title: string }) => (
+            <Button
+              key={category.id}
+              variant={
+                selectedCategories.includes(category.id)
+                  ? 'primary'
+                  : 'secondary'
+              }
+              onClick={() => handleCategoryClick(category.id)}
+            >
+              {category.title}
+            </Button>
+          ))}
+        </ButtonGroup>
+        <br />
+        <br />
+        <InputGroup style={{ width: '100%' }}>
+          <label htmlFor="password-input">
+            Password to access Protected Articles:&nbsp;
+          </label>
+          <input
+            type="text"
+            id="password-input"
+            value={key}
+            onChange={(e) => setKey(e.target.value)}
+            maxLength={32}
+          ></input>
+          <button
+            onClick={(e) => {
+              setKeys([...keys, key.substring(0, 32).padEnd(32, ' ')]);
+              setKey('');
+              /*
 		  decryptArticles(key.substring(0, 32).padEnd(32, " "), allowedToAccessPhrase).then((result) => {
 		    setAllowedToAccessArr(allowedToAccessArr.map((canAccess, i) => canAccess || result[i] !== null));
 			setArticleContent(result);
 		  });
 		  */
-            e.preventDefault();
-          }}
-        >
-          Submit
-        </button>
+              e.preventDefault();
+            }}
+          >
+            Submit
+          </button>
+          &nbsp;&nbsp;
+          {/*<InputGroup.Text id="basic-addon1"><i className="fas fa-search"></i></InputGroup.Text>*/}
+          <span className="input-group-text" id="basic-addon1">
+            <label htmlFor="search-bar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+              </svg>
+            </label>
+          </span>
+          <Form.Control
+            type="text"
+            placeholder="Search..."
+            aria-label="Search"
+            id="search-bar"
+            aria-describedby="basic-addon1"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          {/*<Button variant="outline-secondary">Search</Button>*/}
+        </InputGroup>
       </form>
       {articles.map(
         (
-          article: { title: string; published: string; updated: string },
+          article: {
+            title: string;
+            categoryId: number;
+            published: string;
+            updated: string;
+          },
           index: number
         ) => {
-          if (!allowedToAccessArr[index]) return '';
+          if (
+            !allowedToAccessArr[index] ||
+            !selectedCategories.includes(article.categoryId) ||
+            (searchTerm !== '' &&
+              !article.title
+                ?.toLowerCase()
+                .includes(searchTerm.toLowerCase()) &&
+              !articleContent[index]
+                ?.toLowerCase()
+                .includes(searchTerm.toLowerCase()))
+          )
+            return '';
           else {
             return (
               <article key={article?.title || index.toString()}>
@@ -216,7 +294,9 @@ export default function Blog() {
                       href="https://molloyaaup.wordpress.com/category/uncategorized/"
                       rel="category tag"
                     >
-                      Uncategorized
+                      {articleCategories.find(
+                        (c: { id: number }) => article?.categoryId === c.id
+                      )?.title || 'Uncategorized'}
                     </a>
                   </span>
                   <span className="comments-link">
