@@ -2,7 +2,7 @@ import articles from '../assets/communications.json';
 // import articleCategories from '../assets/article-categories.json';
 // import { ButtonGroup, Button, Form, InputGroup } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import { format } from 'date-fns';
+// import { format } from 'date-fns';
 
 async function aesDecrypt(ciphertext: string, key: string) {
   const keyUint8 = new TextEncoder().encode(key);
@@ -175,9 +175,9 @@ export default function Communications() {
         (
           article: {
             title: string;
-            categoryId: number;
-            published: string;
-            updated: string;
+            categoryId?: number;
+            published?: string;
+            updated?: string;
           },
           index: number
         ) => {
