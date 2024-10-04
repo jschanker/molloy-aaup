@@ -1,27 +1,61 @@
 import '../Home.css';
 import aaupHeader from '../assets/aaup-header.jpg'; // image from https://www.peoplesworld.org/wp-content/uploads/2022/03/aaup960.jpg
+import aaupHeaderTopCropped1 from '../assets/aaup-header-top-cropped1.jpg';
+import aaupHeaderTopCropped2 from '../assets/aaup-header-top-cropped2.jpg';
+import aaupHeaderTopCropped3 from '../assets/aaup-header-top-cropped3.jpg';
 import fist from '../assets/aaup-fist.png'; // image adapted from https://www.newschoolfreepress.com/wp-content/uploads/2024/03/aaup-1536x864.png
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
+  const [headerImageLoaded, setHeaderImageLoaded] = useState(false);
   useEffect(() => {
-    const images = document.querySelectorAll('.fade-in');
+    if (headerImageLoaded) {
+      const images = document.querySelectorAll('.fade-in');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target);
-        }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
       });
-    });
 
-    images.forEach((image) => observer.observe(image));
-  }, []);
+      images.forEach((image) => observer.observe(image));
+    }
+  }, [headerImageLoaded]);
   return (
     <main id="homeSection">
-      <img src={aaupHeader} id="topHeader" />
+      <picture
+        onLoad={() => setHeaderImageLoaded(true)}
+        onError={() => setHeaderImageLoaded(true)}
+      >
+        <source
+          srcSet={aaupHeader}
+          id="topHeader"
+          alt="AAUP National crowd banner"
+          media="(max-aspect-ratio: 1.25)"
+        />
+        <source
+          srcSet={aaupHeaderTopCropped1}
+          id="topHeader"
+          alt="AAUP National crowd banner"
+          media="(max-aspect-ratio: 1.5)"
+        />
+        <source
+          srcSet={aaupHeaderTopCropped2}
+          id="topHeader"
+          alt="AAUP National crowd banner"
+          media="(max-aspect-ratio: 1.75)"
+        />
+        <source
+          srcSet={aaupHeaderTopCropped3}
+          id="topHeader"
+          alt="AAUP National crowd banner"
+        />
+        <img src={aaupHeader} id="topHeader" alt="AAUP National crowd banner" />
+      </picture>
       <h1>
         Join AAUP: Your Advocate for Academic Freedom and Professional Rights
       </h1>

@@ -86,6 +86,17 @@
   transform: translateX(0);
 }
 
+#homeSection {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 600px) {
+  #homeSection ul {
+    /*list-style-type: none;*/
+    padding-left: 0;
+  }
 }
