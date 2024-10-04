@@ -70,7 +70,11 @@ export default function Home() {
                 <li>
                   Watchdog for Fairness: We monitor your institution to identify
                   and address issues that may compromise your rights or the
-                  academic environment.
+                  academic environment, which include{' '}
+                  <Link to="/communications">
+                    protecting untenured and tenured faculty members
+                  </Link>
+                  .
                 </li>
               </ul>
             </div>

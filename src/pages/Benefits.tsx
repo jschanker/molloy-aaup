@@ -1,6 +1,6 @@
 export default function Benefits() {
   return (
-    <div>
+    <div className="container-fluid">
 	  <h1>Benefits of AAUP Membership</h1>
 	  <a href="https://www.aaup.org/membership/benefits">
         Benefits, Webinars, and Informative Information on aaup.org
