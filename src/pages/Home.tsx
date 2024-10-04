@@ -34,26 +34,19 @@ export default function Home() {
         <source
           srcSet={aaupHeader}
           id="topHeader"
-          alt="AAUP National crowd banner"
           media="(max-aspect-ratio: 1.25)"
         />
         <source
           srcSet={aaupHeaderTopCropped1}
           id="topHeader"
-          alt="AAUP National crowd banner"
           media="(max-aspect-ratio: 1.5)"
         />
         <source
           srcSet={aaupHeaderTopCropped2}
           id="topHeader"
-          alt="AAUP National crowd banner"
           media="(max-aspect-ratio: 1.75)"
         />
-        <source
-          srcSet={aaupHeaderTopCropped3}
-          id="topHeader"
-          alt="AAUP National crowd banner"
-        />
+        <source srcSet={aaupHeaderTopCropped3} id="topHeader" />
         <img src={aaupHeader} id="topHeader" alt="AAUP National crowd banner" />
       </picture>
       <h1>
