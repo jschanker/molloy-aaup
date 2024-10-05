@@ -1,10 +1,43 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [subject, setSubject] = useState('');
   const [didSubmit, setDidSubmit] = useState(false);
+  const [error, setError] = useState('');
+  const [sent, setSent] = useState(false);
+  
+  useEffect(() => {
+    if (didSubmit) {
+      console.log({ name, subject, email, message });
+      axios
+        .post(
+          'https://script.google.com/macros/s/AKfycby4Dvk3PMxzJVbEaV5dRA0ZZyRS5dTAK-xxqLPh1PN0wK3WsejSuOmRDDJ6yU7JjF0S3A/exec',
+          {
+            name,
+            email,
+            subject,
+            message,
+          },
+          { headers: { 'content-type': 'application/x-www-form-urlencoded' } }
+        )
+        .then(function (response) {
+          if (response.data?.toString() !== '200') {
+            setError(response.data);
+          } else {
+            setSent(true);
+          }
+        })
+        .catch(function (error) {
+          setError(error?.message);
+          console.log(error);
+        });
+    }
+  }, [didSubmit]);
+  
   return (
     <div className="container-fluid">
       <h1>Contact Us</h1>
@@ -33,6 +66,15 @@ export default function Contact() {
           ></input>
           <br />
           <br />
+          <label htmlFor="subject">Subject</label>: &nbsp;
+          <input
+            type="text"
+            id="subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+          ></input>
+          <br />
+          <br />
           <label htmlFor="message">Message</label>: &nbsp;
           <textarea
             id="message"
@@ -45,7 +87,11 @@ export default function Contact() {
           <button onClick={() => setDidSubmit(true)}>Send feedback</button>
         </>
       ) : (
-        <p>Thank you for your message. We will get back to you soon.</p>
+        <p>
+          {error.toString() === '401'
+            ? 'Sorry, you are not authorized to send e-mails at this time.'
+            : error || (sent && 'Thank you for your message. We will get back to you soon.')}
+        </p>
       )}
       <br />
       <br />
