@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 // import jwt from 'jsonwebtoken';
-// import * as google from 'google-auth-library';
+//import * as google from 'google-auth-library';
+import { accounts } from 'google-auth-library';
 
 export default function SendEmail() {
   // const [password, setPassword] = useState('');
@@ -14,25 +15,25 @@ export default function SendEmail() {
   const [error, setError] = useState('');
   const [sent, setSent] = useState(false);
 
-  const handleCallbackResponse = (response) => {
+  const handleCallbackResponse = (response: {credential?: string}) => {
     //localStorage.setItem('token', response?.credential);
     setToken(response?.credential);
     // console.log(response);
   };
 
   useEffect(() => {
-    if (typeof google !== 'undefined') {
+    /*if (typeof google !== 'undefined') {*/
       // console.log(google, window.origin, import.meta.env);
-      google.accounts.id.initialize({
+      accounts.id.initialize({
         client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
         callback: handleCallbackResponse,
       });
-      google.accounts.id.renderButton(document.getElementById('signInDiv'), {
+      accounts.id.renderButton(document.getElementById('signInDiv'), {
         theme: 'outline',
         width: 200,
         size: 'large',
       });
-    }
+    //}
     if (didSubmit) {
       console.log({ subject, message, purpose, token });
       axios
