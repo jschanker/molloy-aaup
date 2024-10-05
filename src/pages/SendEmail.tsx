@@ -17,11 +17,14 @@ export default function SendEmail() {
 
   const handleCallbackResponse = (response: {credential?: string}) => {
     //localStorage.setItem('token', response?.credential);
-    resonse?.credential && setToken(response.credential);
+    if(typeof response?.credential === 'string') {
+      setToken(response.credential);
+    }
     // console.log(response);
   };
 
   useEffect(() => {
+    // @ts-ignore
     if (typeof google !== 'undefined') {
       // console.log(google, window.origin, import.meta.env);
 	  // @ts-ignore
