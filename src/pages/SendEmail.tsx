@@ -1,26 +1,48 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+// import jwt from 'jsonwebtoken';
+// import * as google from 'google-auth-library';
 
 export default function SendEmail() {
-  const [password, setPassword] = useState('');
+  // const [password, setPassword] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [purpose, setPurpose] = useState('New blog posts');
+  const [token, setToken] = useState(/*localStorage.getItem('token')*/ '');
   const [didSubmit, setDidSubmit] = useState(false);
   const [error, setError] = useState('');
   const [sent, setSent] = useState(false);
 
+  const handleCallbackResponse = (response) => {
+    //localStorage.setItem('token', response?.credential);
+    setToken(response?.credential);
+    // console.log(response);
+  };
+
   useEffect(() => {
+    if (typeof google !== 'undefined') {
+      // console.log(google, window.origin, import.meta.env);
+      google.accounts.id.initialize({
+        client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
+        callback: handleCallbackResponse,
+      });
+      google.accounts.id.renderButton(document.getElementById('signInDiv'), {
+        theme: 'outline',
+        width: 200,
+        size: 'large',
+      });
+    }
     if (didSubmit) {
-      console.log({ subject, message, purpose, password });
+      console.log({ subject, message, purpose, token });
       axios
         .post(
-          'https://script.google.com/macros/s/AKfycbwFi3QDI1K7jrXiEtjRrJQIIDeXUmUgcWoQy14-CQ9qrYNOEqHBb_i-VG8VbxKZUc_5/exec',
+          'https://script.google.com/macros/s/AKfycbzhjGbVq9pGxRNMQmWD3Inj2MrouBR-g3kF551pZX3sDDLjBnn8Hqh1iefOdnjugEHN/exec',
           {
+            token,
             subject,
             message,
             purpose,
-            password,
           },
           { headers: { 'content-type': 'application/x-www-form-urlencoded' } }
         )
@@ -41,9 +63,24 @@ export default function SendEmail() {
   return (
     <div className="container-fluid">
       <h1>Send Email</h1>
+      <p>
+        Currently, you need to sign in with your Google account to send an
+        e-mail to the mailing list and be one of the authorized senders. If you
+        are not currently authorized to do so and would like to send an e-mail
+        to the list, please{' '}
+        <Link to="/contact">
+          let us know the message you want us to send on your behalf
+        </Link>
+        .
+      </p>
+      <br />
+      <div id="signInDiv" className="custom-google-button">
+        Login with Google
+      </div>
+      <br />
       {!didSubmit ? (
         <>
-          <label htmlFor="password">Password</label>: &nbsp;
+          {/*<label htmlFor="password">Password</label>: &nbsp;
           <input
             type="password"
             id="password"
@@ -54,7 +91,7 @@ export default function SendEmail() {
             onChange={(e) => setPassword(e.target.value)}
           ></input>
           <br />
-          <br />
+          <br />*/}
           <label htmlFor="subject">Subject</label>: &nbsp;
           <input
             type="text"
@@ -100,6 +137,12 @@ export default function SendEmail() {
                 'subject'
               ) as HTMLInputElement;
               // const messageInput = document.getElementById('message');
+              if (!token) {
+                setDidSubmit(false);
+                return alert(
+                  'Please click the sign in button and select your account first to send the message.'
+                );
+              }
               const isValid = [subjectInput].every((x) => x!.checkValidity());
               if (isValid) {
                 e.preventDefault();
