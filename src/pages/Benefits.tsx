@@ -1,10 +1,11 @@
 export default function Benefits() {
   return (
     <div className="container-fluid">
-	  <h1>Benefits of AAUP Membership</h1>
-	  <a href="https://www.aaup.org/membership/benefits">
+      <h1>Benefits of AAUP Membership</h1>
+      <a href="https://www.aaup.org/membership/benefits" target="_blank">
         Benefits, Webinars, and Informative Information on aaup.org
       </a>
+      {/*
       <iframe
         title="VideoPress Video Player"
         aria-label="VideoPress Video Player"
@@ -14,8 +15,7 @@ export default function Benefits() {
         frameBorder="0"
         allowFullScreen
         allow="clipboard-write"
-      ></iframe>
+      ></iframe>*/}
     </div>
   );
 }
-

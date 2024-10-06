@@ -50,6 +50,9 @@ export default function Navigation() {
               <NavDropdown.Item as={Link} to="/benefits">
                 Benefits of Membership
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/forming-union">
+                Information on Forming a Union Chapter
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/professional-insurance">
                 Professional Liability Insurance
               </NavDropdown.Item>

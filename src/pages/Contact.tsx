@@ -1,15 +1,20 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useSearchParams } from 'react-router-dom';
 
 export default function Contact() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const topic = searchParams.get('topic');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [subject, setSubject] = useState('');
+  const [subject, setSubject] = useState(
+    topic === 'union-volunteer' ? 'Volunteer to form union chapter inquiry' : ''
+  );
   const [didSubmit, setDidSubmit] = useState(false);
   const [error, setError] = useState('');
   const [sent, setSent] = useState(false);
-  
+
   useEffect(() => {
     if (didSubmit) {
       console.log({ name, subject, email, message });
@@ -37,7 +42,7 @@ export default function Contact() {
         });
     }
   }, [didSubmit]);
-  
+
   return (
     <div className="container-fluid">
       <h1>Contact Us</h1>
@@ -90,7 +95,9 @@ export default function Contact() {
         <p>
           {error.toString() === '401'
             ? 'Sorry, you are not authorized to send e-mails at this time.'
-            : error || (sent && 'Thank you for your message. We will get back to you soon.')}
+            : error ||
+              (sent &&
+                'Thank you for your message. We will get back to you soon.')}
         </p>
       )}
       <br />
