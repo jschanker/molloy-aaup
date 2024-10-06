@@ -20,7 +20,7 @@ export default function Contact() {
       console.log({ name, subject, email, message });
       axios
         .post(
-          'https://script.google.com/macros/s/AKfycby031XfS4pCsr_sUC1oSQsPTqeJms9IcNubFoppIdF4xGza_rHk8JVb5oDF8gg-SYtaFg/exec',
+          'https://script.google.com/macros/s/AKfycbx6ObhtKM-67JBT07acgCpRVjvL1At_-3Ji1B8uDBtn9CYbbX8KsFo7MPje6hAKcoJHdw/exec',
           {
             name,
             email,
