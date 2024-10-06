@@ -2,7 +2,8 @@ export default function Join() {
   return (
     <>
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScej7AxcTuyczt3e-hSitAY17WRNONL8w-M-Q5JtQfPU-4fYQ/viewform?embedded=true"
+        //src="https://docs.google.com/forms/d/e/1FAIpQLScej7AxcTuyczt3e-hSitAY17WRNONL8w-M-Q5JtQfPU-4fYQ/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScueQT3tqGIThTeTLK-7h4mKrRNF4cxGSVlC4NZEGMc-_EReg/viewform?embedded=true"
         width="100%"
         height="1469"
         frameBorder="0"
