@@ -60,6 +60,84 @@ export default function Home() {
         <ol style={{ marginTop: '30px' }}>
           <li className="section-item fade-in">
             <div className="section-item-content">
+              <h3>Why Join?</h3>
+              <ul>
+                <li>
+                  In this day of eroding faculty governance and school financial
+                  challenges, the jobs of both tenured and untenured professors
+                  are at{' '}
+                  <a
+                    href="https://mcquad.org/2024/01/24/tenured-professors-fired-in-sweeping-layoffs/"
+                    target="_blank"
+                  >
+                    significant risk
+                  </a>
+                  . We{' '}
+                  <Link to="/communications">
+                    protect both tenured and untenured faculty members from
+                    unjust dismissal
+                  </Link>
+                  , freely offering costly legal services as required.
+                </li>
+                <li>
+                  We work to <Link to="/blog">address fair compensation</Link>{' '}
+                  when benefits are cut or raises are non-existent or low. AAUP
+                  is now{' '}
+                  <a
+                    href="https://www.aaup.org/about/aaupaft-affiliation"
+                    target="_blank"
+                  >
+                    affiliated with the powerful American Federation of Teachers
+                    Union
+                  </a>
+                  .
+                </li>
+                <li>
+                  {/*From ensuring faculty representation on search committees to being able to teach how you want in the classroom, AAUP makes sure we all have voices and*/}{' '}
+                  AAUP works to ensure faculty governance. When important
+                  decisions have been made such as{' '}
+                  <Link to="/blog">selecting a University President</Link>, AAUP
+                  was there to make sure faculty had adequate representation.
+                </li>
+                <li>
+                  AAUP pushes to preserve academic freedom, ensuring that its
+                  members are able to teach and research what and how they want.
+                  When students, parents, or administrators object to what a
+                  professor teaches within the scope of their area of expertise,
+                  you can rest assured that AAUP is there to back up the faculty
+                  member. Additionally, For about the price of a coffee per
+                  week, AAUP offers its members{' '}
+                  <Link to="/professional-insurance">
+                    Professional Liability Insurance
+                  </Link>
+                  , which can cover a member for up to $1 million for legal
+                  defense and settlement costs related to your professional
+                  duties as a teacher or researcher.
+                </li>
+                <li>
+                  Increasing our AAUP Chapter's membership will enhance our
+                  ability to help you and your fellow faculty members when you
+                  have a problem and strengthen our ability to ensure adequate
+                  compensation. And you can do this for less than a dollar a
+                  day!
+                </li>
+                <li>
+                  Still not ready to join? Feel free to{' '}
+                  <Link to="/contact">contact us</Link> with any questions or
+                  concerns you may have and we'll happily answer them! Or if
+                  you're ready: <br />{' '}
+                  <Link to="join">
+                    <button className="btn btn-primary">Join Now</button>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="section-item-image">
+              <img src={fist} alt="Molloy AAUP fist" />
+            </div>
+          </li>
+          <li className="section-item fade-in">
+            <div className="section-item-content">
               <h3>Protect Your Rights</h3>
               <ul>
                 <li>
