@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useSearchParams } from 'react-router-dom';
 
 export default function Contact() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const topic = searchParams.get('topic');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
