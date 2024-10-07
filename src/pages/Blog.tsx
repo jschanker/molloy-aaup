@@ -97,7 +97,7 @@ export default function Blog() {
     if (selectedCategories.includes(categoryId)) {
       setSelectedCategories(selectedCategories.filter((c) => c !== categoryId));
     } else {
-      setSelectedCategories(selectedCategories.concat(categoryId));
+      setSelectedCategories(/*selectedCategories.concat(*/[categoryId]/*)*/);
     }
   };
 

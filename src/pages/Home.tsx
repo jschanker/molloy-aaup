@@ -105,8 +105,11 @@ export default function Home() {
                   When students, parents, or administrators object to what a
                   professor teaches within the scope of their area of expertise,
                   you can rest assured that AAUP is there to back up the faculty
-                  member. Additionally, For about the price of a coffee per
-                  week, AAUP offers its members{' '}
+                  member.
+                </li>
+                <li>
+                  For about the price of a coffee per week, AAUP offers its
+                  members{' '}
                   <Link to="/professional-insurance">
                     Professional Liability Insurance
                   </Link>
