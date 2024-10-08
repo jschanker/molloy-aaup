@@ -77,7 +77,7 @@ export default function Home() {
                     protect both tenured and untenured faculty members from
                     unjust dismissal
                   </Link>
-                  , freely offering costly legal services as required.
+                  , offering assistance with legal services as required.
                 </li>
                 <li>
                   We work to <Link to="/blog">address fair compensation</Link>{' '}
