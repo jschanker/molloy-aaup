@@ -55,6 +55,10 @@ export default function Home() {
       <h2>Protect Your Career, Strengthen Your Voice.</h2>
       <Link to="join">
         <button className="btn btn-primary">Join Now</button>
+        <p>
+          Please join directly through Molloy AAUP to ensure that the chapter
+          receives your local dues.
+        </p>
       </Link>
       <div>
         <ol style={{ marginTop: '30px' }}>
