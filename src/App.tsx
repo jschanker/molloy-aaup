@@ -12,6 +12,7 @@ import Join from './pages/Join';
 import Contact from './pages/Contact';
 import Communications from './pages/Communications';
 import UpdateSignup from './pages/UpdateSignup';
+import SkillsToWin from './pages/SkillsToWin';
 import SendEmail from './pages/SendEmail';
 import './App.css';
 
@@ -79,6 +80,7 @@ function App() {
               </div>
             }
           />
+          <Route path="skills-to-win-training" element={<SkillsToWin />} />
           <Route path="send-email" element={<SendEmail />} />
         </Routes>
       </BrowserRouter>
