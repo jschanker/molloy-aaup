@@ -77,6 +77,9 @@ export default function Navigation() {
               <NavDropdown.Item as={Link} to="/skills-to-win-training">
                 AAUP Skills to Win Training
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/codifying-red-book">
+                Codifying the Red Book Workshop
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/opportunities">
                 Volunteer
               </NavDropdown.Item>
