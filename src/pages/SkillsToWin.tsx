@@ -10,7 +10,10 @@ export default function SkillsToWin() {
       </p>
       <p>
         The next training will take place in February.{' '}
-        <a href="https://laborcenter.berkeley.edu/workshop/skills-to-win/">
+        <a
+          href="https://laborcenter.berkeley.edu/workshop/skills-to-win/"
+          target="_blank"
+        >
           Skills to Win
         </a>{' '}
         is an organization that helps communities and unions across the country
@@ -31,7 +34,10 @@ export default function SkillsToWin() {
         Skills to Win will take place over ZOOM on Monday and Wednesday
         evenings, February 10, 12, 17, 19, 24, and 26, from 7-9 p.m. ET / 4-6
         p.m. PT.{' '}
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSewzd2ndXz99gv-FuDGZma0GEokqagoktiWXJ67CwuTTq6dIA/viewform?can_id=86ab14c95cdf5105dcf36088824ad31e">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSewzd2ndXz99gv-FuDGZma0GEokqagoktiWXJ67CwuTTq6dIA/viewform?can_id=86ab14c95cdf5105dcf36088824ad31e"
+          target="_blank"
+        >
           Register here
         </a>
         .
@@ -59,7 +65,10 @@ export default function SkillsToWin() {
 
       <p>
         See the link for the{' '}
-        <a href="https://www.aaup.org/event/skills-win-training">
+        <a
+          href="https://www.aaup.org/event/skills-win-training"
+          target="_blank"
+        >
           Skills to Win Training
         </a>
         .

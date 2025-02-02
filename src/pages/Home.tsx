@@ -74,7 +74,10 @@ export default function Home() {
             Governance discusses how the Trump administration and many state
             governments appear poised to accelerate attacks on academic freedom,
             shared governance, and higher education as a public good. See the{' '}
-            <a href="https://www.aaup.org/report/against-anticipatory-obedience">
+            <a
+              href="https://www.aaup.org/report/against-anticipatory-obedience"
+              target="_blank"
+            >
               statement on the Molloy AAUP web site
             </a>{' '}
             or{' '}
