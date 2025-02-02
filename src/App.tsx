@@ -58,7 +58,7 @@ function App() {
               <div className="container-fluid">
                 <h1>Professional Liability Insurance</h1>
                 <a
-                  href="https://www.aaupambainsurance.com/business-insurance/professional-liability/professional-liability/professional-liability.html"
+                  href="https://www.proliability.com/professional-liability-insurance/educator-colleges-universities.html"
                   target="_blank"
                 >
                   Get it here!
