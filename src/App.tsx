@@ -14,6 +14,7 @@ import Communications from './pages/Communications';
 import UpdateSignup from './pages/UpdateSignup';
 import Publications from './pages/Publications';
 import SkillsToWin from './pages/SkillsToWin';
+import DefendingHigherEd from './pages/DefendingHigherEd';
 import SendEmail from './pages/SendEmail';
 import './App.css';
 
@@ -82,6 +83,7 @@ function App() {
             }
           />
           <Route path="publications" element={<Publications />} />
+          <Route path="defending-higher-ed" element={<DefendingHigherEd />} />
           <Route path="skills-to-win-training" element={<SkillsToWin />} />
           <Route path="send-email" element={<SendEmail />} />
         </Routes>

@@ -59,6 +59,9 @@ export default function Navigation() {
               <NavDropdown.Item as={Link} to="/communications">
                 National and State AAUP Communications
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/defending-higher-ed">
+                Defending Higher Education
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/publications">
                 Publications
               </NavDropdown.Item>
