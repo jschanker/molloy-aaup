@@ -2,6 +2,7 @@ import articles from '../assets/communications.json';
 // import articleCategories from '../assets/article-categories.json';
 // import { ButtonGroup, Button, Form, InputGroup } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 // import { format } from 'date-fns';
 
 async function aesDecrypt(ciphertext: string, key: string) {
@@ -95,9 +96,26 @@ export default function Communications() {
   return (
     <div className="container-fluid">
       <h1>Communications</h1>
-      <a href="/assets/aaup_local_6741_aft_7-17-24_mtg.pdf" target="_blank">
-        AAUP Local 6741 All Member Meeting Notes from 7/17/24
-      </a>
+      <h2 style={{ color: 'rgb(102, 102, 102)', marginTop: '10px' }}>
+        Updates from The National Office of AAUP
+      </h2>
+
+      <p>
+        There are a number of important upcoming workshops to address increasing
+        attacks against our right to teach, research, and advocate for higher
+        education as a public good. If you would like to receive news,
+        announcements, updates and statements from the AAUP National office you
+        may sign up at{' '}
+        <a href="https://www.aaup.org/news">https://www.aaup.org/news</a>.{' '}
+        <br />
+        For Molloy AAUP updates, you may{' '}
+        <Link to="/updates-signup">sign up here</Link>.
+      </p>
+      <p style={{ margin: '10px 0' }}>
+        <a href="/assets/aaup_local_6741_aft_7-17-24_mtg.pdf" target="_blank">
+          AAUP Local 6741 All Member Meeting Notes from 7/17/24
+        </a>
+      </p>
       <form>
         {/*<label htmlFor="filter-categories">Filter articles by:&nbsp;</label>
         <ButtonGroup id="filter-categories">
