@@ -62,6 +62,48 @@ export default function Home() {
       </Link>
       <div>
         <div className="section-item-content fade-in">
+          <h3>AAUP Joins Lawsuit to Block Trump's Unlawful DEI Orders</h3>
+          <p>
+            On the evening of{' '}
+            <time dateTime="2025-02-03">February 3, 2025</time>, the AAUP, along
+            with the National Association of Diversity Officers in Higher
+            Education and other partners filed a lawsuit to block Trump's
+            unlawful and unconstitutional DEI executive orders, which threaten
+            academic freedom and access to higher education.
+          </p>
+          <p>
+            The lawsuit, which can be read in full{' '}
+            <a
+              href="https://storage.courtlistener.com/recap/gov.uscourts.mdd.575287/gov.uscourts.mdd.575287.1.0.pdf"
+              target="_blank"
+            >
+              here
+            </a>
+            , argues that Trump's orders exceed his legal authority, are overly
+            vague, and fail to define such terms as "DEI," "equity," and
+            "illegal DEIA." Without any definitive criteria or information, the
+            orders open academic institutions to the risk of lawsuits for
+            policies that promote diversity, equity, and inclusion.
+          </p>
+          <p>
+            The AAUP has long advocated for diversity in higher education,
+            including a diverse faculty and student body. The Association's
+            recent statement{' '}
+            <span style={{ fontStyle: 'italic' }}>
+              <a
+                href="https://www.aaup.org/report/eliminating-discrimination-and-achieving-equality-higher-education"
+                target="_blank"
+              >
+                On Eliminating Discrimination and Achieving Equality in Higher
+                Education
+              </a>
+            </span>{' '}
+            focuses on diversity in faculty employment within an integrated
+            understanding of how to move toward the broader goal of inclusion
+            and equality in higher education.
+          </p>
+        </div>
+        <div className="section-item-content fade-in">
           <h3>
             Statement from the National Office of AAUP's Against Anticipatory
             Obedience
