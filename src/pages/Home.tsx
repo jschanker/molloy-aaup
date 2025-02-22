@@ -67,7 +67,7 @@ export default function Home() {
             American Civil Rights in Education
           </h3>
           <p>
-            In a letter released on
+            In a letter released on{' '}
             <time dateTime="2025-02-14">February 14, 2025</time>, the acting
             assistant secretary for the US Department of Education’s Office of
             Civil Rights threatened to annihilate sixty years of advancements in
