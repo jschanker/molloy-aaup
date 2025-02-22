@@ -62,6 +62,25 @@ export default function Home() {
       </Link>
       <div>
         <div className="section-item-content fade-in">
+          <h3>
+            AAUP President: DOE's Office of Civil Rights Has Declared War on
+            American Civil Rights in Education
+          </h3>
+          <p>
+            In a letter released on
+            <time dateTime="2025-02-14">February 14, 2025</time>, the acting
+            assistant secretary for the US Department of Education’s Office of
+            Civil Rights threatened to annihilate sixty years of advancements in
+            equal opportunity by eliminating all federal funding for schools
+            that support and celebrate students from diverse backgrounds. Read
+            more on the National AAUP web site here:{' '}
+            <a href="https://www.aaup.org/news/aaup-president-eds-office-civil-rights-has-declared-war-american-civil-rights-education">
+              https://www.aaup.org/news/aaup-president-eds-office-civil-rights-has-declared-war-american-civil-rights-education
+            </a>
+            .
+          </p>
+        </div>
+        <div className="section-item-content fade-in">
           <h3>AAUP Joins Lawsuit to Block Trump's Unlawful DEI Orders</h3>
           <p>
             On the evening of{' '}
