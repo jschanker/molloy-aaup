@@ -63,6 +63,16 @@ export default function Home() {
       <div>
         <div className="section-item-content fade-in">
           <h3>
+            AAUP End of the Year Meeting{' '}
+            <time dateTime="2025-04-30 12:00">
+              Wednesday April 30th (this is a study day) at 12 noon
+            </time>{' '}
+            in K005
+          </h3>
+          <p>Refreshments will be served, and all faculty are welcome.</p>
+        </div>
+        <div className="section-item-content fade-in">
+          <h3>
             AAUP President: DOE's Office of Civil Rights Has Declared War on
             American Civil Rights in Education
           </h3>
