@@ -63,13 +63,62 @@ export default function Home() {
       <div>
         <div className="section-item-content fade-in">
           <h3>
-            AAUP End of the Year Meeting{' '}
-            <time dateTime="2025-04-30 12:00">
-              Wednesday April 30th (this is a study day) at 12 noon
+            AAUP Meeting Social: Save the Date{' '}
+            <time dateTime="2025-10-06T15:30">
+              Monday, October 6th at 3:30PM
             </time>{' '}
-            in K005
+            in K005 Moot Court Room
           </h3>
-          <p>Refreshments will be served, and all faculty are welcome.</p>
+          <p>Lunch will be served, and all faculty are welcome.</p>
+        </div>
+        <div className="section-item-content fade-in">
+          <h3>Learn How to Organize Your Campus</h3>
+          <blockquote cite="https://www.organizeeverycampus.org/">
+            <p>
+              Organize Every Campus is a campaign to grow AAUP chapters and
+              locals, develop rank-and-file leadership, and build power for the
+              movement to make higher education a public good.Our power comes in
+              numbers and in our ability to act collectively.
+            </p>
+            <p>
+              Through Organize Every Campus, you will connect with faculty
+              leaders and organizing staff who will share skills and experiences
+              having effective one-on-one conversations and making strategic
+              plans that move your coworkers to action in the workplace and the
+              community.
+            </p>
+            <p>
+              You will learn from the organizing successes and challenges faced
+              by faculty across the country, as we fight together on issues
+              including budget austerity, political attacks on academic freedom,
+              student loan debt, and the jobs crisis in higher education.
+            </p>
+          </blockquote>
+          <p>
+            Read more at{' '}
+            <a href="https://www.organizeeverycampus.org/">
+              https://www.organizeeverycampus.org/
+            </a>
+          </p>
+        </div>
+        <div className="section-item-content fade-in">
+          <h3>
+            Strategies to Protect Yourself Online in the Current Climate: A
+            Guide from the AAUP and Faculty First Responders
+          </h3>
+          <blockquote cite="https://www.aaup.org/sites/default/files/2025-09/Advisory-Academic-Workers-M.pdf">
+            <p>
+              In a moment when it is becoming increasingly difficult to predict
+              the consequences of our online speech and choices, we hope you
+              will find these strategies and resources helpful.
+            </p>
+          </blockquote>
+          <p>
+            Read more at{' '}
+            <a href="https://www.aaup.org/sites/default/files/2025-09/Advisory-Academic-Workers-M.pdf">
+              https://www.aaup.org/sites/default/files/2025-09/Advisory-Academic-Workers-M.pdf
+            </a>
+          </p>
         </div>
         <div className="section-item-content fade-in">
           <h3>
