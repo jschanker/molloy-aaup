@@ -68,6 +68,11 @@ export default function Home() {
               Monday, October 6th at 3:30PM
             </time>{' '}
             in K005 Moot Court Room
+            <br />
+            Zoom link:{' '}
+            <a href="https://zoom.us/j/98190481147">
+              https://zoom.us/j/98190481147
+            </a>
           </h3>
           <p>Lunch will be served, and all faculty are welcome.</p>
         </div>
