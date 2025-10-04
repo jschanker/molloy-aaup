@@ -77,6 +77,69 @@ export default function Home() {
           <p>Lunch will be served, and all faculty are welcome.</p>
         </div>
         <div className="section-item-content fade-in">
+          <h3>Challenges to Unionization</h3>
+          <h4>
+            Loyola Marymount abruptly rescinds recognition of faculty union,
+            claiming religious exemption
+          </h4>
+          <blockquote cite="https://www.latimes.com/business/story/2025-09-18/loyola-marymount-university-abruptly-stops-bargaining-with-faculty-union-claiming-religious-exemption">
+            <ul>
+              <li>
+                Loyola Marymount University abruptly withdrew recognition of its
+                faculty union after 10 months of negotiations, citing
+                constitutional religious exemptions.
+              </li>
+              <li>
+                The decision affects nearly 400 part-time and full-time
+                educators and has sparked protests and allegations of
+                union-busting.
+              </li>
+            </ul>
+          </blockquote>
+          <p>
+            Read more at{' '}
+            <a href="https://www.latimes.com/business/story/2025-09-18/loyola-marymount-university-abruptly-stops-bargaining-with-faculty-union-claiming-religious-exemption">
+              https://www.latimes.com/business/story/2025-09-18/loyola-marymount-university-abruptly-stops-bargaining-with-faculty-union-claiming-religious-exemption
+            </a>
+          </p>
+          <h4>
+            Understanding the possibilities for and the barriers to unionization
+            at private colleges and universities.
+          </h4>
+          <blockquote cite="https://www.latimes.com/business/story/2025-09-18/loyola-marymount-university-abruptly-stops-bargaining-with-faculty-union-claiming-religious-exemption">
+            <p>
+              It has been just shy of forty-five years since the US Supreme
+              Court issued its 1980 decision in NLRB v. Yeshiva University,
+              holding that most tenure-track and tenured faculty members at
+              private colleges and universities are “managerial employees”—a
+              category excluded from coverage and protection under the National
+              Labor Relations Act (NLRA). As a result of that judi­cial
+              decision, faculty unionization in private colleges and
+              universi­ties ground virtually to a halt.
+            </p>
+          </blockquote>
+          <p>
+            Read more at{' '}
+            <a href="https://www.aaup.org/academe/issues/fall-2024/faculty-unionization-and-continuing-contradiction-yeshiva">
+              https://www.aaup.org/academe/issues/fall-2024/faculty-unionization-and-continuing-contradiction-yeshiva
+            </a>
+          </p>
+          <h4>Student Unionization Efforts Stall Under Trump Administration</h4>
+          <blockquote cite="https://www.bestcolleges.com/news/student-unionization-efforts-stall-under-trump-administration/">
+            <p>
+              After changes at the National Labor Relations Board, student
+              groups at private colleges and universities are withdrawing
+              petitions to unionize.
+            </p>
+          </blockquote>
+          <p>
+            Read more at{' '}
+            <a href="https://www.bestcolleges.com/news/student-unionization-efforts-stall-under-trump-administration/">
+              https://www.bestcolleges.com/news/student-unionization-efforts-stall-under-trump-administration/
+            </a>
+          </p>
+        </div>
+        <div className="section-item-content fade-in">
           <h3>Learn How to Organize Your Campus</h3>
           <blockquote cite="https://www.organizeeverycampus.org/">
             <p>
