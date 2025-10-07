@@ -70,7 +70,7 @@ export default function Home() {
             in K005 Moot Court Room
             <br />
             Slides from the Meeting:{' '}
-            <Link to="assets/AAUP_October_6th_2025_Meeting.pdf">
+            <Link to="assets/AAUP_October_6th_2025_Meeting.pdf" target="_blank">
               download the PDF
             </Link>
           </h3>
@@ -269,7 +269,10 @@ export default function Home() {
               statement on the Molloy AAUP web site
             </a>{' '}
             or{' '}
-            <Link to="assets/Against_Anticipatory_Obedience.pdf">
+            <Link
+              to="assets/Against_Anticipatory_Obedience.pdf"
+              target="_blank"
+            >
               download the PDF
             </Link>
             .
