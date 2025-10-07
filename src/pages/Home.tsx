@@ -63,16 +63,16 @@ export default function Home() {
       <div>
         <div className="section-item-content fade-in">
           <h3>
-            AAUP Meeting Social: Save the Date{' '}
+            AAUP Meeting Social
             <time dateTime="2025-10-06T15:30">
               Monday, October 6th at 3:30PM
             </time>{' '}
             in K005 Moot Court Room
             <br />
-            Zoom link:{' '}
-            <a href="https://zoom.us/j/98190481147">
-              https://zoom.us/j/98190481147
-            </a>
+            Slides from the Meeting:{' '}
+            <Link to="assets/AAUP_October_6th_2025_Meeting.pdf">
+              download the PDF
+            </Link>
           </h3>
           <p>Lunch will be served, and all faculty are welcome.</p>
         </div>
