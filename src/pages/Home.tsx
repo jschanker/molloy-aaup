@@ -249,57 +249,6 @@ export default function Home() {
             and equality in higher education.
           </p>
         </div>
-        <div className="section-item-content fade-in">
-          <h3>
-            Statement from the National Office of AAUP's Against Anticipatory
-            Obedience
-          </h3>
-          <p>
-            AAUP is working to prevent "anticipatory obedience" to political
-            interference in higher education, on our campuses and in our states.
-            A new joint statement from the AAUP’s Committee A on Academic
-            Freedom and Tenure and Committee on College and University
-            Governance discusses how the Trump administration and many state
-            governments appear poised to accelerate attacks on academic freedom,
-            shared governance, and higher education as a public good. See the{' '}
-            <a
-              href="https://www.aaup.org/report/against-anticipatory-obedience"
-              target="_blank"
-            >
-              statement on the Molloy AAUP web site
-            </a>{' '}
-            or{' '}
-            <Link
-              to="assets/Against_Anticipatory_Obedience.pdf"
-              target="_blank"
-            >
-              download the PDF
-            </Link>
-            .
-          </p>
-        </div>
-        <div className="section-item-content fade-in">
-          <h3>
-            Examining Employer Compensation Practices that Contribute to Pay
-            Inequities
-          </h3>
-          <p>
-            AAUP recently conducted a webinar on Examining Employer Compensation
-            Practices that Contribute to Pay Inequities. The workshop revealed
-            both the persistent challenges and promising solutions in our
-            collective progress toward workplace equity.
-          </p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/xSPG-oM4cks?si=gihPuQPW75TChjPk"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        </div>
         <ol style={{ marginTop: '30px' }}>
           <li className="section-item fade-in">
             <div className="section-item-content">
