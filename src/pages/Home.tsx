@@ -63,13 +63,14 @@ export default function Home() {
       <div>
         <div className="section-item-content fade-in">
           <h3>
-            AAUP Meeting Social
-            <time dateTime="2025-10-06T15:30">
-              Monday, October 6th at 3:30PM
+            AAUP Meeting Social{' '}
+            <time dateTime="2025-12-02T15:30">
+              Tuesday, December 2nd at 3:30PM
             </time>{' '}
             in K005 Moot Court Room
             <br />
-            Slides from the Meeting:{' '}
+            Slides from the{' '}
+            <time dateTime="2025-10-06T15:30">October 6th </time>Meeting:{' '}
             <Link to="assets/AAUP_October_6th_2025_Meeting.pdf" target="_blank">
               download the PDF
             </Link>
@@ -140,7 +141,7 @@ export default function Home() {
           </p>
         </div>
         <div className="section-item-content fade-in">
-          <h3>Learn How to Organize Your Campus</h3>
+          <h3>Past Events: Learn How to Organize Your Campus</h3>
           <blockquote cite="https://www.organizeeverycampus.org/">
             <p>
               Organize Every Campus is a campaign to grow AAUP chapters and
