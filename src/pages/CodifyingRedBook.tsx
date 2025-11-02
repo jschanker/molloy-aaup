@@ -10,7 +10,7 @@ export default function CodifyingRedBook() {
         protect academic freedom, faculty oversight of curriculum, protest and
         dissent, due process and more. The Spring 2025 workshop was held on
         February 6, 2025. <br />
-        <Link to="/assets/Codifying_the_Redbook_Spring_2025.pdf">
+        <Link to="/assets/Codifying_the_Redbook_Spring_2025.pdf" reloadDocument>
           Download the Slides from the Meeting
         </Link>
       </p>

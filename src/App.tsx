@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import About from './pages/About';
 import Blog from './pages/Blog';
+import FacultyHandbook from './pages/FacultyHandbook';
 import Benefits from './pages/Benefits';
 import Home from './pages/Home';
 import Join from './pages/Join';
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/faculty-handbook" element={<FacultyHandbook />} />
           <Route path="/benefits" element={<Benefits />} />
           <Route path="/communications" element={<Communications />} />
           <Route path="/contact" element={<Contact />} />

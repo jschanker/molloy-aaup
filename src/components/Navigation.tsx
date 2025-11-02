@@ -47,6 +47,9 @@ export default function Navigation() {
               <NavDropdown.Item as={Link} to="/blog">
                 Blog Feed
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/faculty-handbook">
+                Analysis of Molloy Faculty Handbook
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/benefits">
                 Benefits of Membership
               </NavDropdown.Item>

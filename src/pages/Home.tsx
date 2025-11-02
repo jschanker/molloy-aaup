@@ -78,6 +78,18 @@ export default function Home() {
           <p>Lunch will be served, and all faculty are welcome.</p>
         </div>
         <div className="section-item-content fade-in">
+          <h3>AAUP Analysis and Feedback of Molloy's Faculty Handbook</h3>
+          <p>
+            On <time dateTime="2025-07-11">July 11th, 2025</time>, the National
+            Office of the AAUP provided an analysis and feedback of our faculty
+            handbook. See{' '}
+            <Link to="/faculty-handbook">
+              Analysis of Molloy Faculty Handbook
+            </Link>{' '}
+            under Faculty Resources to view the response as a PDF.
+          </p>
+        </div>
+        <div className="section-item-content fade-in">
           <h3>Challenges to Unionization</h3>
           <h4>
             Loyola Marymount abruptly rescinds recognition of faculty union,
@@ -112,10 +124,10 @@ export default function Home() {
               It has been just shy of forty-five years since the US Supreme
               Court issued its 1980 decision in NLRB v. Yeshiva University,
               holding that most tenure-track and tenured faculty members at
-              private colleges and universities are “managerial employees”—a
-              category excluded from coverage and protection under the National
-              Labor Relations Act (NLRA). As a result of that judi­cial
-              decision, faculty unionization in private colleges and
+              private colleges and universities are “managerial
+              employees”—a category excluded from coverage and protection
+              under the National Labor Relations Act (NLRA). As a result of that
+              judi­cial decision, faculty unionization in private colleges and
               universi­ties ground virtually to a halt.
             </p>
           </blockquote>
