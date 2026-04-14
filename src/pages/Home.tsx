@@ -62,6 +62,11 @@ export default function Home() {
       </Link>
       <div>
         <div className="section-item-content fade-in">
+          Virtual AAUP Meeting{' '}
+          <time dateTime="2026-05-06T12:00">
+            Wednesday, May 6th at 12:00pm 
+          </time>{' '}
+          <p>Zoom link to follow.</p>
           <h3>
             Slides from the{' '}
             <time dateTime="2025-10-06T15:30">October 6th </time>Meeting:{' '}
