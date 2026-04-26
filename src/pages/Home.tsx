@@ -1,22 +1,22 @@
-import '../Home.css';
-import aaupHeader from '../assets/aaup-header.jpg'; // image from https://www.peoplesworld.org/wp-content/uploads/2022/03/aaup960.jpg
-import aaupHeaderTopCropped1 from '../assets/aaup-header-top-cropped1.jpg';
-import aaupHeaderTopCropped2 from '../assets/aaup-header-top-cropped2.jpg';
-import aaupHeaderTopCropped3 from '../assets/aaup-header-top-cropped3.jpg';
-import fist from '../assets/aaup-fist.png'; // image adapted from https://www.newschoolfreepress.com/wp-content/uploads/2024/03/aaup-1536x864.png
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import "../Home.css";
+import aaupHeader from "../assets/aaup-header.jpg"; // image from https://www.peoplesworld.org/wp-content/uploads/2022/03/aaup960.jpg
+import aaupHeaderTopCropped1 from "../assets/aaup-header-top-cropped1.jpg";
+import aaupHeaderTopCropped2 from "../assets/aaup-header-top-cropped2.jpg";
+import aaupHeaderTopCropped3 from "../assets/aaup-header-top-cropped3.jpg";
+import fist from "../assets/aaup-fist.png"; // image adapted from https://www.newschoolfreepress.com/wp-content/uploads/2024/03/aaup-1536x864.png
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [headerImageLoaded, setHeaderImageLoaded] = useState(false);
   useEffect(() => {
     if (headerImageLoaded) {
-      const images = document.querySelectorAll('.fade-in');
+      const images = document.querySelectorAll(".fade-in");
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('show');
+            entry.target.classList.add("show");
             observer.unobserve(entry.target);
           }
         });
@@ -63,21 +63,21 @@ export default function Home() {
       <div>
         <div className="section-item-content fade-in">
           <h3>
-            AAUP Meeting Social: Save the Date{' '}
+            AAUP Meeting Social: Save the Date{" "}
             <time dateTime="2026-05-06T12:00">
-              Wednesday, May 6th at 12:00pm 
-            </time>{' '}
+              Wednesday, May 6th at 12:00pm
+            </time>{" "}
             in K005 Moot Court Room
             <br />
-            Zoom link:{' '}
+            Zoom link:{" "}
             <a href="https://zoom.us/j/93697089084">
               https://zoom.us/j/93697089084
             </a>
           </h3>
           <p>Lunch will be served, and all faculty are welcome.</p>
           <h3>
-            Slides from the{' '}
-            <time dateTime="2025-10-06T15:30">October 6th </time>Meeting:{' '}
+            Slides from the{" "}
+            <time dateTime="2025-10-06T15:30">October 6th </time>Meeting:{" "}
             <Link to="assets/AAUP_October_6th_2025_Meeting.pdf" target="_blank">
               download the PDF
             </Link>
@@ -88,10 +88,10 @@ export default function Home() {
           <p>
             On <time dateTime="2025-07-11">July 11th, 2025</time>, the National
             Office of the AAUP provided an analysis and feedback of our faculty
-            handbook. See{' '}
+            handbook. See{" "}
             <Link to="/faculty-handbook">
               Analysis of Molloy Faculty Handbook
-            </Link>{' '}
+            </Link>{" "}
             under Faculty Resources to view the response as a PDF.
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function Home() {
             </ul>
           </blockquote>
           <p>
-            Read more at{' '}
+            Read more at{" "}
             <a href="https://www.latimes.com/business/story/2025-09-18/loyola-marymount-university-abruptly-stops-bargaining-with-faculty-union-claiming-religious-exemption">
               https://www.latimes.com/business/story/2025-09-18/loyola-marymount-university-abruptly-stops-bargaining-with-faculty-union-claiming-religious-exemption
             </a>
@@ -130,15 +130,15 @@ export default function Home() {
               It has been just shy of forty-five years since the US Supreme
               Court issued its 1980 decision in NLRB v. Yeshiva University,
               holding that most tenure-track and tenured faculty members at
-              private colleges and universities are “managerial
-              employees”—a category excluded from coverage and protection
-              under the National Labor Relations Act (NLRA). As a result of that
-              judi­cial decision, faculty unionization in private colleges and
+              private colleges and universities are “managerial employees”—a
+              category excluded from coverage and protection under the National
+              Labor Relations Act (NLRA). As a result of that judi­cial
+              decision, faculty unionization in private colleges and
               universi­ties ground virtually to a halt.
             </p>
           </blockquote>
           <p>
-            Read more at{' '}
+            Read more at{" "}
             <a href="https://www.aaup.org/academe/issues/fall-2024/faculty-unionization-and-continuing-contradiction-yeshiva">
               https://www.aaup.org/academe/issues/fall-2024/faculty-unionization-and-continuing-contradiction-yeshiva
             </a>
@@ -152,7 +152,7 @@ export default function Home() {
             </p>
           </blockquote>
           <p>
-            Read more at{' '}
+            Read more at{" "}
             <a href="https://www.bestcolleges.com/news/student-unionization-efforts-stall-under-trump-administration/">
               https://www.bestcolleges.com/news/student-unionization-efforts-stall-under-trump-administration/
             </a>
@@ -182,7 +182,7 @@ export default function Home() {
             </p>
           </blockquote>
           <p>
-            Read more at{' '}
+            Read more at{" "}
             <a href="https://www.organizeeverycampus.org/">
               https://www.organizeeverycampus.org/
             </a>
@@ -194,20 +194,20 @@ export default function Home() {
             American Civil Rights in Education
           </h3>
           <p>
-            In a letter released on{' '}
+            In a letter released on{" "}
             <time dateTime="2025-02-14">February 14, 2025</time>, the acting
             assistant secretary for the US Department of Education’s Office of
             Civil Rights threatened to annihilate sixty years of advancements in
             equal opportunity by eliminating all federal funding for schools
             that support and celebrate students from diverse backgrounds. Read
-            more on the National AAUP web site here:{' '}
+            more on the National AAUP web site here:{" "}
             <a href="https://www.aaup.org/news/aaup-president-eds-office-civil-rights-has-declared-war-american-civil-rights-education">
               https://www.aaup.org/news/aaup-president-eds-office-civil-rights-has-declared-war-american-civil-rights-education
             </a>
             .
           </p>
         </div>
-        <ol style={{ marginTop: '30px' }}>
+        <ol style={{ marginTop: "30px" }}>
           <li className="section-item fade-in">
             <div className="section-item-content">
               <h3>Why Join?</h3>
@@ -215,14 +215,14 @@ export default function Home() {
                 <li>
                   In this day of eroding faculty governance and school financial
                   challenges, the jobs of both tenured and untenured professors
-                  are at{' '}
+                  are at{" "}
                   <a
                     href="https://mcquad.org/2024/01/24/tenured-professors-fired-in-sweeping-layoffs/"
                     target="_blank"
                   >
                     significant risk
                   </a>
-                  . We{' '}
+                  . We{" "}
                   <Link to="/communications">
                     protect both tenured and untenured faculty members from
                     unjust dismissal
@@ -230,9 +230,9 @@ export default function Home() {
                   , offering assistance with legal services as required.
                 </li>
                 <li>
-                  We work to <Link to="/blog">address fair compensation</Link>{' '}
+                  We work to <Link to="/blog">address fair compensation</Link>{" "}
                   when benefits are cut or raises are non-existent or low. AAUP
-                  is now{' '}
+                  is now{" "}
                   <a
                     href="https://www.aaup.org/about/aaupaft-affiliation"
                     target="_blank"
@@ -243,9 +243,9 @@ export default function Home() {
                   .
                 </li>
                 <li>
-                  {/*From ensuring faculty representation on search committees to being able to teach how you want in the classroom, AAUP makes sure we all have voices and*/}{' '}
+                  {/*From ensuring faculty representation on search committees to being able to teach how you want in the classroom, AAUP makes sure we all have voices and*/}{" "}
                   AAUP works to ensure faculty governance. When important
-                  decisions have been made such as{' '}
+                  decisions have been made such as{" "}
                   <Link to="/blog">selecting a University President</Link>, AAUP
                   was there to make sure faculty had adequate representation.
                 </li>
@@ -259,7 +259,7 @@ export default function Home() {
                 </li>
                 <li>
                   For about the price of a coffee per week, AAUP offers its
-                  members{' '}
+                  members{" "}
                   <Link to="/professional-insurance">
                     Professional Liability Insurance
                   </Link>
@@ -275,10 +275,10 @@ export default function Home() {
                   day!
                 </li>
                 <li>
-                  Still not ready to join? Feel free to{' '}
+                  Still not ready to join? Feel free to{" "}
                   <Link to="/contact">contact us</Link> with any questions or
                   concerns you may have and we'll happily answer them! Or if
-                  you're ready: <br />{' '}
+                  you're ready: <br />{" "}
                   <Link to="join">
                     <button className="btn btn-primary">Join Now</button>
                   </Link>
@@ -301,7 +301,7 @@ export default function Home() {
                 <li>
                   Watchdog for Fairness: We monitor your institution to identify
                   and address issues that may compromise your rights or the
-                  academic environment, which include{' '}
+                  academic environment, which include{" "}
                   <Link to="/communications">
                     protecting untenured and tenured faculty members
                   </Link>
