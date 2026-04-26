@@ -84,6 +84,25 @@ export default function Home() {
           </h3>
         </div>
         <div className="section-item-content fade-in">
+          <h3>AAUP's Position on Turning Point USA</h3>
+          <p>
+            Among Turning Point USA's tactics is tabling on campus to promote
+            the establishment of local chapters. The AAUP recognizes that
+            students should be free to organize and join associations to promote
+            their interests and to express their views. However, since this
+            group's activities include targeting faculty with misleading
+            listings on its Professor Watchlist, often leading to vicious online
+            harassment, it is important to make campus constituencies aware of
+            these activities. Steps you can take include the following.
+          </p>
+          <p>
+            Read more at{" "}
+            <a href="https://www.aaup.org/issues-higher-education/political-attacks-higher-ed/targeted-harassment-faculty/if-turning-point">
+              https://www.aaup.org/issues-higher-education/political-attacks-higher-ed/targeted-harassment-faculty/if-turning-point
+            </a>
+          </p>
+        </div>
+        <div className="section-item-content fade-in">
           <h3>AAUP Analysis and Feedback of Molloy's Faculty Handbook</h3>
           <p>
             On <time dateTime="2025-07-11">July 11th, 2025</time>, the National
