@@ -62,11 +62,19 @@ export default function Home() {
       </Link>
       <div>
         <div className="section-item-content fade-in">
-          Virtual AAUP Meeting{' '}
-          <time dateTime="2026-05-06T12:00">
-            Wednesday, May 6th at 12:00pm 
-          </time>{' '}
-          <p>Zoom link to follow.</p>
+          <h3>
+            AAUP Meeting Social: Save the Date{' '}
+            <time dateTime="2026-05-06T12:00">
+              Wednesday, May 6th at 12:00pm 
+            </time>{' '}
+            in K005 Moot Court Room
+            <br />
+            Zoom link:{' '}
+            <a href="https://zoom.us/j/93697089084">
+              https://zoom.us/j/93697089084
+            </a>
+          </h3>
+          <p>Lunch will be served, and all faculty are welcome.</p>
           <h3>
             Slides from the{' '}
             <time dateTime="2025-10-06T15:30">October 6th </time>Meeting:{' '}
@@ -74,7 +82,6 @@ export default function Home() {
               download the PDF
             </Link>
           </h3>
-          <p>Lunch will be served, and all faculty are welcome.</p>
         </div>
         <div className="section-item-content fade-in">
           <h3>AAUP Analysis and Feedback of Molloy's Faculty Handbook</h3>
