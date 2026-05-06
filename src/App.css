@@ -20,3 +20,7 @@ nav .btn-primary:visited,
 nav .btn-primary:link {
   background-color: #981e32;
 }
+
+.section-item-content:nth-child(odd) {
+  background-color: #ffffff; 
+}
