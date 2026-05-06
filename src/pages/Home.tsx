@@ -82,6 +82,7 @@ export default function Home() {
               download the PDF
             </Link>
           </h3>
+          <p>This is the most recent meeting where we discussed unionization.</p>
         </div>
         <div className="section-item-content fade-in">
           <h3>AAUP's Position on Turning Point USA</h3>
