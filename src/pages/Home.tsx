@@ -62,19 +62,7 @@ export default function Home() {
       </Link>
       <div>
         <div className="section-item-content fade-in">
-          <h3>
-            AAUP Meeting Social: Save the Date{" "}
-            <time dateTime="2026-05-06T12:00">
-              Wednesday, May 6th at 12:00pm
-            </time>{" "}
-            in K005 Moot Court Room
-            <br />
-            Zoom link:{" "}
-            <a href="https://zoom.us/j/93697089084">
-              https://zoom.us/j/93697089084
-            </a>
-          </h3>
-          <p>Lunch will be served, and all faculty are welcome.</p>
+          <h3>Fall 2026 AAUP Meeting Social: TBD</h3>
           <h3>
             Slides from the{" "}
             <time dateTime="2025-10-06T15:30">October 6th </time>Meeting:{" "}
@@ -82,7 +70,36 @@ export default function Home() {
               download the PDF
             </Link>
           </h3>
-          <p>This is the most recent meeting where we discussed unionization.</p>
+          <p>
+            This is the most recent meeting where we discussed unionization.
+          </p>
+        </div>
+        <div className="section-item-content fade-in">
+          <h3>Saving Lives, Building Futures, Powering the Economy</h3>
+          <p>
+            In a direct response to Education Secretary Linda McMahon's "
+            <a
+              href="https://www.ed.gov/media/document/national-call-action-university-presidents-and-governing-boards-114351.pdf"
+              target="_blank"
+            >
+              A National Call to Action to University Presidents and Governing
+              Boards
+            </a>
+            ," AAUP President Todd Wolfson and AFT President Randi Weingarten
+            issued a formal response demanding that the Trump administration
+            immediately cease weaponizing taxpayer funds and civil rights
+            enforcement to politically coerce colleges and universities to adopt
+            their authoritarian agenda.
+          </p>
+          <p>
+            Read more at{" "}
+            <a
+              href="https://www.aaup.org/news/aaup-and-aft-respond-trumps-compact-20"
+              target="_blank"
+            >
+              https://www.aaup.org/news/aaup-and-aft-respond-trumps-compact-20
+            </a>
+          </p>
         </div>
         <div className="section-item-content fade-in">
           <h3>AAUP's Position on Turning Point USA</h3>
