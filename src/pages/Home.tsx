@@ -65,14 +65,12 @@ export default function Home() {
           <h3>Fall 2026 AAUP Meeting Social: TBD</h3>
           <h3>
             Slides from the{" "}
-            <time dateTime="2025-10-06T15:30">October 6th </time>Meeting:{" "}
+            <time dateTime="2025-10-06T15:30">October 6th 2025</time> Meeting:{" "}
             <Link to="assets/AAUP_October_6th_2025_Meeting.pdf" target="_blank">
               download the PDF
             </Link>
           </h3>
-          <p>
-            This is the most recent meeting where we discussed unionization.
-          </p>
+          <p>The Path to Unionization was discussed in this meeting.</p>
         </div>
         <div className="section-item-content fade-in">
           <h3>Saving Lives, Building Futures, Powering the Economy</h3>
