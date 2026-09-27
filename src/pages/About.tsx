@@ -7,7 +7,7 @@ export default function About() {
     "Committee A": "Dean Hey",
     "Tenured Representative": "Frieda Pemberton",
     "Untenured Representative": "Kimberly Johnson",
-    "Adjunct Representative": "Juliet Ferman",
+    "Adjunct Representative": "Juliet Fernan",
     "Immediate Past President": "Christine Barrow",
   };
   return (
